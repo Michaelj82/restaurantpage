@@ -1,7 +1,35 @@
 html, body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
     background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr minmax(550px, 3fr) 1fr;
+    grid-template-rows: 1fr;
+    }
+    svg{
+        height: 100%;
+        width: auto;
+    }
+
+    #header-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: green;
+        height: 100px;
     }
     
     #content{
-        color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        background-color: brown;
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+        color: white;
     }
