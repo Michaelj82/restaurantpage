@@ -4,8 +4,9 @@ module.exports = {
 
     entry: "./src/index.js",
     output: {
-        filename: 'bundle.js',
-        path: '/',
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/restaurantpage/'
     },
     module: {
 
